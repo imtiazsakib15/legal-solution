@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legal Solution</title>
-    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Tailwind and DaisyUi cdn -->
     <link
@@ -13,11 +20,230 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-color": "#B68C5A",
+              "heading-color": "#414040",
+              "p-color": "#707070",
+              "footer-color": "#CFCFCF",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+              garamond: ["EB Garamond", "serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
 
-  <body>
+  <body class="font-poppins">
     <!-- Header Section -->
-    <header></header>
+    <header class="max-w-screen-xl mx-auto">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a class="text-p-color text-base">Home</a></li>
+              <li>
+                <a class="text-p-color text-base"
+                  >Services
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.25 4.5L15.75 12L8.25 19.5"
+                      stroke="#707070"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="text-p-color text-base"
+                  >Cases<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.25 4.5L15.75 12L8.25 19.5"
+                      stroke="#707070"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="text-p-color text-base"
+                  >Blog
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.25 4.5L15.75 12L8.25 19.5"
+                      stroke="#707070"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="text-p-color text-base"
+                  >Contact Us
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.25 4.5L15.75 12L8.25 19.5"
+                      stroke="#707070"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href=""><img src="./images/logo2.png" alt="" /></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-p-color text-base">Home</a></li>
+            <li>
+              <a class="text-p-color text-base"
+                >Services
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.25 4.5L15.75 12L8.25 19.5"
+                    stroke="#707070"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="text-p-color text-base"
+                >Cases<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.25 4.5L15.75 12L8.25 19.5"
+                    stroke="#707070"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="text-p-color text-base"
+                >Blog
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.25 4.5L15.75 12L8.25 19.5"
+                    stroke="#707070"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="text-p-color text-base"
+                >Contact Us
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.25 4.5L15.75 12L8.25 19.5"
+                    stroke="#707070"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button
+            class="text-white text-base sm:text-lg font-semibold px-4 sm:px-7 py-3 sm:py-4 rounded-lg bg-primary-color hover:bg-primary-color hover:scale-105"
+          >
+            Free Consultation
+          </button>
+        </div>
+      </nav>
+    </header>
 
     <!-- Main Section -->
     <main></main>
