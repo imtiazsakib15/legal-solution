@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,7 +44,7 @@
     <!-- Header Section -->
     <header class="max-w-screen-xl mx-auto">
       <!-- Navbar -->
-      <nav class="navbar">
+      <nav class="navbar py-8">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -243,6 +243,40 @@
           </button>
         </div>
       </nav>
+      <!-- Hero Section -->
+      <section
+        class="hero min-h-[calc(100vh-124px)] bg-[url('./images/banner.png')]"
+      >
+        <div
+          class="hero-overlay bg-gradient-to-r from-true-gray-900 via-true-gray-900 to-transparent"
+        ></div>
+        <div class="hero-content text-center text-neutral-content py-20">
+          <div class="max-w-2xl">
+            <h1
+              class="text-4xl md:text-6xl lg:text-7xl leading-tight text-white font-extrabold font-garamond mb-6"
+            >
+              We Provide Effective Legal Solutions
+            </h1>
+            <p class="text-base leading-relaxed text-[#E7E7E7] mb-8">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <div class="">
+              <input
+                type="text"
+                placeholder="Search your services"
+                class="input w-full max-w-xs text-[#A0A0A0] sm:leading-relaxed py-3 h-auto border-0 mb-5"
+              />
+              <button
+                class="text-white text-base sm:text-lg font-semibold px-4 sm:px-7 py-3 rounded-lg bg-primary-color hover:bg-primary-color"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
 
     <!-- Main Section -->
